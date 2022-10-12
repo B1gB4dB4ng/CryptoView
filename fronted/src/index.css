@@ -7,7 +7,7 @@
   --error: #e7195a;
 }
 body {
-  background: #f1f1f1;
+  background: #fff;
   margin: 0;
   font-family: "Poppins";
 }
@@ -22,7 +22,7 @@ body {
 }
 
 header {
-  background: white;
+  background: #fff;
   max-width: 100%;
 }
 header.container {
@@ -78,7 +78,7 @@ div.user {
   text-align: center;
 
   border: 1px solid;
-  border-color: white;
+  border-color: #fff;
   border-radius: 15px;
 }
 .homePageCards:hover {
@@ -110,7 +110,7 @@ input {
   margin-bottom: 20px;
 }
 .coin-detail-box img {
-  width: 50%;
+  width: 45%;
 }
 .link a {
   color: black;
@@ -119,12 +119,12 @@ input {
   text-align: center;
   margin: 20px auto;
   border: 1px solid;
-  border-color: white;
+  border-color: #fff;
   border-radius: 15px;
 }
 .cards:hover {
   border: 1px solid;
-  border-color: white;
+  border-color: #fff;
   border: 1px solid;
   border-color: var(--primary);
   border-radius: 15px;
@@ -141,9 +141,12 @@ img.coinStatusImg {
   width: 50px;
   margin: auto;
 }
+.cardsInfoBox {
+  padding-top: 5px;
+}
 div.error {
   padding: 10px;
-  background: #ffefef;
+  background: #fff;
   border: 1px solid var(--error);
   color: var(--error);
   border-radius: 4px;
@@ -175,7 +178,7 @@ nav button {
   max-height: 50px;
 }
 nav button:hover {
-  color: white;
+  color: #fff;
   border: 2px solid var(--primary);
   background-color: var(--primary);
 }
@@ -194,6 +197,9 @@ nav button:hover {
   label,
   input {
     width: 100%;
+  }
+  .coin-detail-box img {
+    width: 20%;
   }
 }
 
@@ -241,6 +247,9 @@ nav button:hover {
   form {
     margin: auto;
   }
+  .coin-detail-box img {
+    width: 15%;
+  }
 }
 
 /* Big */
@@ -281,7 +290,7 @@ nav button:hover {
     width: 20%;
   }
   .coin-detail-box img {
-    width: 20%;
+    width: 15%;
   }
   label,
   input {
