@@ -14,9 +14,6 @@ const PORT = process.env.PORT;
 
 app.use(express.json());
 app.use((req, res, next) => {
-  //const { authorization } = req.headers;
-  //const token = authorization.split(" ")[1];
-  //console.log(token);
   console.log(req.path, req.method);
   next();
 });

@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import { CoinsContextProvider } from "./context/CoinsContext";
 import { AuthContextProvider } from "./context/AuthContext";
-import { FavCoinsContextProvider } from "./context/FavCoinsContext";
+
 import { LikeProvider } from "./context/LikeContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -13,9 +13,7 @@ root.render(
     <AuthContextProvider>
       <LikeProvider>
         <CoinsContextProvider>
-          <FavCoinsContextProvider>
-            <App />
-          </FavCoinsContextProvider>
+          <App />
         </CoinsContextProvider>
       </LikeProvider>
     </AuthContextProvider>
