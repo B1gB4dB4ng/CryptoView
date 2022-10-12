@@ -23,10 +23,10 @@ Please run  " npm run dev " on backend folder and then "npm run start" on fronte
 
 ## 5. Must Haves
 
--Application must have  watchlist page for each user.
--User is able to add coins his/her    watchlist.
--User is able to remove coins his/her   watchlist.
--User is able to coin details by clicking on the -image of coin .
+- Application must have  watchlist page for each user.
+- User is able to add coins his/her    watchlist.
+- User is able to remove coins his/her   watchlist.
+- User is able to coin details by clicking on the -image of coin .
 
 
 ## 6. Nice-to Have
