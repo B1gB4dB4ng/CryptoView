@@ -1,9 +1,9 @@
 # CryptoView
 
-## 1.Api  Link 
+## 1.Api  Links 
 
 [Coingecko.com](https://www.coingecko.com/en/api/documentation)
-
+[coinstats.app](https://documenter.getpostman.com/view/5734027/RzZ6Hzr3)
 
 
 ## 2. Description
@@ -26,12 +26,12 @@ Please run  " npm run dev " on backend folder and then "npm run start" on fronte
 - Application must have  watchlist page for each user.
 - User is able to add coins his/her    watchlist.
 - User is able to remove coins his/her   watchlist.
-- User is able to coin details by clicking on the -image of coin .
+- User is able to coin details by clicking on the image of coin .
 
 
 ## 6. Nice-to Have
 
-
+- User is able to follow recent news main page 
 - User should be able to sign up with email/username and password .
 - Password must be strong. 
 - User should be able to sign in with the email/username and password.
