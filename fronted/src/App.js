@@ -8,6 +8,7 @@ import Signup from "./pages/Signup";
 import Navbar from "./Components/Navbar";
 import FavPage from "./pages/FavPage";
 import CoinDetail from "./pages/CoinDetail";
+import Main from "./pages/Main";
 
 function App() {
   const { user } = useAuthContext();
@@ -18,10 +19,7 @@ function App() {
         <Navbar />
         <div className="pages">
           <Routes>
-            <Route
-              path="/"
-              //  element={!user ? <Login /> : <Navigate to="/home" />}
-            />
+            <Route path="/" element={<Main />} />
             <Route
               path="/home"
               element={user ? <Home /> : <Navigate to="/login" />}
