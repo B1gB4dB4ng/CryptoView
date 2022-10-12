@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { LikeContext } from "../context/LikeContext";
-import heart1 from "../img/heart1.png";
-import heart2 from "../img/heart2.png";
+import remove from "../img/remove.png";
+import add from "../img/add.png";
 
 export default function Like({ coin }) {
   const { likedItem, likeCoin, dissLikeCoin } = useContext(LikeContext);
@@ -11,12 +11,20 @@ export default function Like({ coin }) {
     return result;
   };
   return isItLiked(coin.id) ? (
-    <div className="heart" onClick={() => dissLikeCoin(coin)}>
-      <img className="heart-icon" src={heart1} alt="fav-icon" />
+    <div className="add-remove" onClick={() => dissLikeCoin(coin)}>
+      <img
+        className="add-remove-icon"
+        src={remove}
+        alt="Add coin to watchList"
+      />
     </div>
   ) : (
-    <div className="heart" onClick={() => likeCoin(coin)}>
-      <img className="heart-icon" src={heart2} alt="fav-icon" />
+    <div className="add-remove" onClick={() => likeCoin(coin)}>
+      <img
+        className="add-remove-icon"
+        src={add}
+        alt="Remove coin from watchlist"
+      />
     </div>
   );
 }

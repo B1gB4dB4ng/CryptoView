@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
-import CoinCard from "../Components/CoinCard.js";
+
 import { useCoinsContext } from "../hooks/useCoinContext";
 import { useAuthContext } from "../hooks/useAuthContext";
+import HomePageCards from "../Components/HomePageCards.js";
 
 export default function Home() {
   const { coins, dispatch } = useCoinsContext();
@@ -26,7 +27,8 @@ export default function Home() {
 
   return (
     <div className="home">
-      {coins && coins.map((coin) => <CoinCard coin={coin} key={coin.id} />)}
+      {coins &&
+        coins.map((coin) => <HomePageCards coin={coin} key={coin.id} />)}
     </div>
   );
 }

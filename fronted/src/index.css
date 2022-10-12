@@ -3,7 +3,7 @@
 
 /* layout */
 :root {
-  --primary: #1aac83;
+  --primary: #0052ff;
   --error: #e7195a;
 }
 body {
@@ -12,7 +12,7 @@ body {
   font-family: "Poppins";
 }
 header {
-  background: #fff;
+  background: white;
 }
 header .container {
   max-width: 1400px;
@@ -23,7 +23,7 @@ header .container {
   justify-content: space-between;
 }
 header a {
-  color: #333;
+  color: #0052ff;
   text-decoration: none;
 }
 .pages {
@@ -34,9 +34,45 @@ header a {
 
 /* homepage */
 .home {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.homePageCards {
+  text-align: start;
+  margin: 20px auto;
+  width: calc(20% - 25px);
+  min-width: 200px;
+  border: none;
+  padding: 5px;
+  border: 1px solid;
+  border-color: white;
+  text-align: center;
+}
+.homePageCards:hover {
+  border: 1px solid;
+  border-color: #0052ff;
+  border-radius: 15px;
+  transition: 0.1s;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: start;
+  margin: 5px auto;
+  width: 100%;
+  min-width: 200px;
+  border: 1px solid;
+  border-color: blue;
+  border-radius: 15px;
+}
+.cardsInfoBox {
+  display: inline-flex;
+  width: 100%;
+}
+.card-img {
+  width: 80px;
+  height: 80px;
 }
 .favcoin-details {
   background: #fff;
@@ -98,6 +134,14 @@ div.error {
   border-radius: 4px;
   margin: 20px 0;
 }
+div.succes {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid green;
+  color: green;
+  border-radius: 4px;
+  margin: 20px 0;
+}
 input.error {
   border: 1px solid var(--error);
 }
@@ -105,29 +149,68 @@ input.error {
 /* navbar */
 nav {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
 }
-nav a,
-nav button {
-  margin-left: 10px;
+.nav-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
 }
+.links {
+  width: 70%;
+}
+.user {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user-info {
+  width: 40%;
+  margin: auto;
+}
+
 nav button {
   background: #fff;
   color: var(--primary);
   border: 2px solid var(--primary);
-  padding: 6px 10px;
+  padding: 5px 8px;
   border-radius: 4px;
   font-family: "Poppins";
   cursor: pointer;
   font-size: 1em;
+  max-height: 50px;
+}
+
+nav button:hover {
+  color: white;
+  border: 2px solid #333;
+  background-color: var(--primary);
+}
+nav span {
+  margin-right: 15px;
 }
 
 .fav-products {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 100px;
+  display: flex;
+  flex-wrap: wrap;
 }
-
+.coin-detail {
+  padding: 50px;
+  text-align: center;
+}
+.img-coin-detail {
+  max-width: 90px;
+  max-height: 90px;
+}
+.calculation {
+  max-width: 50%;
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+}
 /* auth forms */
 form.signup,
 form.login {
@@ -138,7 +221,16 @@ form.login {
   border-radius: 4px;
 }
 
-.heart-icon {
-  width: 50px;
-  height: 50px;
+.add-remove-icon {
+  width: 35px;
+  height: 35px;
+}
+
+.add-remove {
+  width: 100%;
+  padding: 4px;
+}
+.coinLink {
+  text-decoration: none;
+  color: black;
 }

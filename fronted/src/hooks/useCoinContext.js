@@ -5,9 +5,7 @@ export const useCoinsContext = () => {
   const context = useContext(CoinsContext);
 
   if (!context) {
-    throw Error(
-      "useFavCoinsContext must be used inside an FavCoinsContextProvider"
-    );
+    throw Error("useCoinsContext must be used inside an CoinsContextProvider");
   }
 
   return context;

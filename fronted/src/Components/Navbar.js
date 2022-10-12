@@ -18,19 +18,27 @@ const Navbar = () => {
         </Link>
         <nav>
           {user && (
-            <div>
-              <div>
-                <Link to="/favcoin">Favcoin</Link>
+            <div className="nav-box">
+              <div className="links">
+                <Link to="/watchlist">WatchList</Link>
               </div>
+              <div className="user">
+                <div className="user-info">
+                  <h5>{user.email}</h5>
+                </div>
 
-              <span>{user.email}</span>
-              <button onClick={handleClick}>Log out</button>
+                <button onClick={handleClick}>Log out</button>
+              </div>
             </div>
           )}
           {!user && (
-            <div>
-              <Link to="/login">Login</Link>
-              <Link to="/signup">Signup</Link>
+            <div className="loginSignup">
+              <Link to="/login">
+                <button>Login</button>
+              </Link>
+              <Link to="/signup">
+                <button>Signup</button>
+              </Link>
             </div>
           )}
         </nav>

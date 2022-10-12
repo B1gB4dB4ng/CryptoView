@@ -20,14 +20,14 @@ function App() {
           <Routes>
             <Route
               path="/"
-              element={!user ? <Login /> : <Navigate to="/home" />}
+              //  element={!user ? <Login /> : <Navigate to="/home" />}
             />
             <Route
               path="/home"
               element={user ? <Home /> : <Navigate to="/login" />}
             />
             <Route
-              path="/favcoin"
+              path="/watchlist"
               element={user ? <FavPage /> : <Navigate to="/login" />}
             />
             <Route

@@ -24,6 +24,7 @@ const FavPage = () => {
   const favcoins = coins.filter((item) =>
     data.map((item2) => item2.coinName).includes(item.id)
   );
+
   return (
     <div>
       <div className="fav-products">
