@@ -23,7 +23,14 @@ const Navbar = () => {
           {user && (
             <div className="nav-box">
               <div className="links">
-                <Link to="/watchlist">WatchList</Link>
+                <div className="linkText">
+                  <Link to="/watchlist" className="">
+                    WatchList
+                  </Link>
+                </div>
+                <div className="linkText">
+                  <Link to="/">Crypto News</Link>
+                </div>
               </div>
               <div className="user">
                 <div className="user-info">
