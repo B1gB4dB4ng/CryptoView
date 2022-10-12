@@ -14,7 +14,7 @@ const Navbar = () => {
     <header>
       <div className="container">
         <div className="brand">
-          <Link to="/home">
+          <Link to="/">
             <h1>CryptoView </h1>
           </Link>
         </div>
@@ -23,6 +23,9 @@ const Navbar = () => {
           {user && (
             <div className="nav-box">
               <div className="links">
+                <div className="linkText">
+                  <Link to="/home">Coins</Link>
+                </div>
                 <div className="linkText">
                   <Link to="/watchlist" className="">
                     WatchList
