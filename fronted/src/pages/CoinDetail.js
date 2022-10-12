@@ -15,14 +15,14 @@ const CoinDetail = () => {
   const { data: coin } = useFetch(coinURL);
 
   return (
-    <div>
+    <>
       {coin && (
-        <div>
+        <div className="coin-detail-box">
           <CoinDetailCard coin={coin} key={coin.symbol} />
           <Calculation coin={coin} price={coin.price} />
         </div>
       )}
-    </div>
+    </>
   );
 };
 

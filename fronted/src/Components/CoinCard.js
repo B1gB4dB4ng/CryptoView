@@ -14,7 +14,7 @@ export default function CoinCard({ coin }) {
         <h3>{coin.name}</h3>
         <h4>Current Price: {coin.current_price} $</h4>
 
-        <div>
+        <div className="coinStatus">
           {coin.price_change_percentage_24h > 0 ? (
             <img src={Up} alt="increasing" className="coinStatusImg" />
           ) : (

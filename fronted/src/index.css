@@ -11,111 +11,148 @@ body {
   margin: 0;
   font-family: "Poppins";
 }
-header {
-  background: white;
-}
-header .container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-header a {
-  color: #0052ff;
-  text-decoration: none;
-}
 .pages {
-  max-width: 1400px;
-  padding: 20px;
-  margin: 0 auto;
+  padding-top: 50px;
 }
 
-/* homepage */
 .home {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.homePageCards {
-  text-align: start;
-  margin: 20px auto;
-  width: calc(20% - 25px);
-  min-width: 200px;
-  border: none;
-  padding: 5px;
-  border: 1px solid;
-  border-color: white;
-  text-align: center;
+
+header {
+  background: white;
+  max-width: 100%;
 }
-.homePageCards:hover {
-  border: 1px solid;
-  border-color: #0052ff;
-  border-radius: 15px;
-  transition: 0.1s;
-}
-.cards {
+header.container {
   display: flex;
   flex-wrap: wrap;
-  text-align: start;
-  margin: 5px auto;
-  width: 100%;
-  min-width: 200px;
-  border: 1px solid;
-  border-color: blue;
-  border-radius: 15px;
-}
-.cardsInfoBox {
-  display: inline-flex;
-  width: 100%;
-}
-.card-img {
-  width: 80px;
-  height: 80px;
-}
-.favcoin-details {
-  background: #fff;
-  border-radius: 4px;
-  margin: 20px auto;
-  padding: 20px;
-  position: relative;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
-}
-.favcoin-details h4 {
-  margin: 0 0 10px 0;
-  font-size: 1.2em;
-  color: var(--primary);
-}
-.favcoin-details p {
-  margin: 0;
-  font-size: 0.9em;
-  color: #555;
-}
-.favcoin-details span {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
-  background: #f1f1f1;
-  padding: 6px;
-  border-radius: 50%;
-  color: #333;
 }
 
-/* new favcoin form */
+.brand {
+  text-align: center;
+}
+.loginSignup {
+  min-width: 30%;
+  text-align: center;
+}
+
+form.signup,
+form.login {
+  max-width: 60%;
+  margin: 150px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+  height: 300px;
+}
+form.signup,
+form.login h3 {
+  text-align: center;
+}
+.nav-box {
+  display: flex;
+
+  margin: auto;
+}
+div.links {
+  width: 60%;
+  padding: 15px;
+}
+header h1 {
+  color: #0052ff;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+header a:hover {
+  color: #0052ff;
+}
+div.user {
+  text-align: right;
+  padding-right: 10px;
+}
+.homePageCards {
+  text-align: center;
+
+  border: 1px solid;
+  border-color: white;
+  border-radius: 15px;
+}
+.homePageCards:hover {
+  border-color: var(--primary);
+}
+img.card-img {
+  width: 100px;
+  height: 100px;
+}
+.fav-products {
+  display: flex;
+  flex-wrap: wrap;
+}
+img.add-remove-icon {
+  width: 50px;
+  height: 50px;
+}
 label,
 input {
   display: block;
+  width: 40%;
+  margin: auto;
+  padding: 5px;
 }
-input {
-  padding: 10px;
-  margin-top: 10px;
+.coin-detail-box {
+  text-align: center;
+  max-width: 90%;
+  margin: auto;
   margin-bottom: 20px;
-  width: 100%;
-  border: 1px solid #ddd;
+}
+.coin-detail-box img {
+  width: 50%;
+}
+.link a {
+  color: black;
+}
+.cards {
+  text-align: center;
+  margin: 20px auto;
+  border: 1px solid;
+  border-color: white;
+  border-radius: 15px;
+}
+.cards:hover {
+  border: 1px solid;
+  border-color: white;
+  border: 1px solid;
+  border-color: var(--primary);
+  border-radius: 15px;
+}
+.coinStatus {
+  padding: 10px;
+}
+img.coinStatusImg {
+  width: 80px;
+  height: 80px;
+}
+.add-remove {
+  padding: 5px;
+  width: 50px;
+  margin: auto;
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
   border-radius: 4px;
-  box-sizing: border-box;
+  margin: 20px 0;
+}
+
+.form-button {
+  text-align: center;
+  margin-top: 10px;
 }
 form button {
   background: var(--primary);
@@ -126,52 +163,6 @@ form button {
   border-radius: 4px;
   cursor: pointer;
 }
-div.error {
-  padding: 10px;
-  background: #ffefef;
-  border: 1px solid var(--error);
-  color: var(--error);
-  border-radius: 4px;
-  margin: 20px 0;
-}
-div.succes {
-  padding: 10px;
-  background: #ffefef;
-  border: 1px solid green;
-  color: green;
-  border-radius: 4px;
-  margin: 20px 0;
-}
-input.error {
-  border: 1px solid var(--error);
-}
-
-/* navbar */
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
-}
-.nav-box {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-}
-.links {
-  width: 70%;
-}
-.user {
-  width: 30%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.user-info {
-  width: 40%;
-  margin: auto;
-}
-
 nav button {
   background: #fff;
   color: var(--primary);
@@ -183,54 +174,121 @@ nav button {
   font-size: 1em;
   max-height: 50px;
 }
-
 nav button:hover {
   color: white;
-  border: 2px solid #333;
+  border: 2px solid var(--primary);
   background-color: var(--primary);
 }
-nav span {
-  margin-right: 15px;
+
+@media (max-width: 500px) {
+  .brand {
+    min-width: 100%;
+  }
+  .homePageCards {
+    margin: 55px auto;
+
+    min-width: 80%;
+  }
+  div.user {
+  }
+  label,
+  input {
+    width: 100%;
+  }
 }
 
-.fav-products {
-  display: flex;
-  flex-wrap: wrap;
-}
-.coin-detail {
-  padding: 50px;
-  text-align: center;
-}
-.img-coin-detail {
-  max-width: 90px;
-  max-height: 90px;
-}
-.calculation {
-  max-width: 50%;
-  max-width: 50%;
-  margin: auto;
-  text-align: center;
-}
-/* auth forms */
-form.signup,
-form.login {
-  max-width: 400px;
-  margin: 40px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 4px;
+/* Middle */
+@media (min-width: 501px) and (max-width: 1023px) {
+  .brand {
+    width: 100%;
+    text-align: center;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .loginSignup {
+    max-width: 40%;
+  }
+  nav {
+    width: 100%;
+  }
+  .loginSignup {
+    margin: auto;
+  }
+  .homePageCards {
+    text-align: center;
+    margin: 55px auto;
+
+    width: 30%;
+  }
+  div.user {
+    width: 100%;
+  }
+  div.links {
+    width: 60%;
+    padding: 15px;
+    text-align: center;
+  }
+  .nav-box {
+    width: 100%;
+    margin: auto;
+  }
+  .cards {
+    width: 40%;
+  }
+  form {
+    margin: auto;
+  }
 }
 
-.add-remove-icon {
-  width: 35px;
-  height: 35px;
-}
-
-.add-remove {
-  width: 100%;
-  padding: 4px;
-}
-.coinLink {
-  text-decoration: none;
-  color: black;
+/* Big */
+@media (min-width: 1024px) {
+  .brand {
+    max-width: 55%;
+  }
+  .container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .loginSignup {
+    max-width: 30%;
+    margin-left: 100%;
+  }
+  nav {
+    width: 70%;
+    margin: auto;
+  }
+  .homePageCards {
+    margin: 55px 15px;
+    width: 17%;
+  }
+  div.user {
+    width: 100%;
+  }
+  div.links {
+    width: 60%;
+    padding: 15px;
+    text-align: center;
+  }
+  .nav-box {
+    width: 100%;
+  }
+  .cards {
+    width: 20%;
+  }
+  .coin-detail-box img {
+    width: 20%;
+  }
+  label,
+  input {
+    max-width: 400px;
+    padding: 5px;
+  }
+  .calculation {
+    padding: 5px;
+  }
 }

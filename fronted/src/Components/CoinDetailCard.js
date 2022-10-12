@@ -13,7 +13,7 @@ const CoinDetailCard = ({ coin }) => {
       <h4>Lowest Price(24h) : {market_data.low_24h.usd} $</h4>
       <h4>Highest Price(24h) : {market_data.high_24h.usd} $</h4>
       <h4>All time high : {market_data.ath.usd} $</h4>
-      <h4>All time Date: {market_data.ath_date.usd.split("T", 1)}</h4>
+      <h4>All time high date: {market_data.ath_date.usd.split("T", 1)}</h4>
     </div>
   );
 };

@@ -13,9 +13,12 @@ const Navbar = () => {
   return (
     <header>
       <div className="container">
-        <Link to="/home">
-          <h1>CryptoView </h1>
-        </Link>
+        <div className="brand">
+          <Link to="/home">
+            <h1>CryptoView </h1>
+          </Link>
+        </div>
+
         <nav>
           {user && (
             <div className="nav-box">
